@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-16T12:30:14 IST" name="DemoQA Test Suite" finished-at="2024-01-16T12:31:09 IST" duration-ms="55380">
+    <groups>
+    </groups>
+    <test started-at="2024-01-16T12:30:14 IST" name="/home/mohag/Documents/Assignments/DemoQA" finished-at="2024-01-16T12:31:09 IST" duration-ms="55380">
+      <class name="com.demo.qa.testcases.InteractionsPageTest">
+        <test-method is-config="true" signature="visitURL()[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:39 IST" name="visitURL" finished-at="2024-01-16T12:30:43 IST" duration-ms="4344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitURL -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:43 IST" name="setUpReports" finished-at="2024-01-16T12:30:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InteractionsPageTest.verifyInteractionsTab()[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyInteractionsTab()[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:43 IST" name="verifyInteractionsTab" finished-at="2024-01-16T12:30:43 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInteractionsTab -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:43 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:43 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInteractionsTab status=SUCCESS method=InteractionsPageTest.verifyInteractionsTab()[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:43 IST" name="setUpReports" finished-at="2024-01-16T12:30:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=InteractionsPageTest.verifyDragAndDropTest()[pri:1, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyDragAndDropTest()[pri:1, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:30:43 IST" name="verifyDragAndDropTest" finished-at="2024-01-16T12:31:04 IST" duration-ms="20544" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Dropped!']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Dropped!']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.demo.qa.utils.TestUtil.waitToElementToAppear(TestUtil.java:47)
+at com.demo.qa.pages.InteractionsPage.validateDragAndDrop(InteractionsPage.java:45)
+at com.demo.qa.testcases.InteractionsPageTest.verifyDragAndDropTest(InteractionsPageTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Dropped!']"}
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-14-generic', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fb2a3b0c5f1f6b67896a65d579a5a5e0, findElement {using=xpath, value=//p[text()='Dropped!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34553/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fb2a3b0c5f1f6b67896a65d579a5a5e0
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDragAndDropTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:31:09 IST" name="reportStatusLog" finished-at="2024-01-16T12:31:09 IST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDragAndDropTest status=FAILURE method=InteractionsPageTest.verifyDragAndDropTest()[pri:1, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.demo.qa.testcases.InteractionsPageTest@5b218417]" started-at="2024-01-16T12:31:09 IST" name="closeBrowser" finished-at="2024-01-16T12:31:09 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.demo.qa.testcases.InteractionsPageTest -->
+      <class name="com.demo.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="visitURL()[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:14 IST" name="visitURL" finished-at="2024-01-16T12:30:20 IST" duration-ms="6519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitURL -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:20 IST" name="setUpReports" finished-at="2024-01-16T12:30:20 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.verifyHomePageTest()[pri:1, instance:com.demo.qa.testcases.HomePageTest@72035809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyHomePageTest()[pri:1, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:20 IST" name="verifyHomePageTest" finished-at="2024-01-16T12:30:21 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:21 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:21 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTest status=SUCCESS method=HomePageTest.verifyHomePageTest()[pri:1, instance:com.demo.qa.testcases.HomePageTest@72035809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:21 IST" name="setUpReports" finished-at="2024-01-16T12:30:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=HomePageTest.clickOnElementPageTest()[pri:2, instance:com.demo.qa.testcases.HomePageTest@72035809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="clickOnElementPageTest()[pri:2, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:21 IST" name="clickOnElementPageTest" finished-at="2024-01-16T12:30:21 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnElementPageTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:21 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnElementPageTest status=SUCCESS method=HomePageTest.clickOnElementPageTest()[pri:2, instance:com.demo.qa.testcases.HomePageTest@72035809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.demo.qa.testcases.HomePageTest@72035809]" started-at="2024-01-16T12:30:21 IST" name="closeBrowser" finished-at="2024-01-16T12:30:22 IST" duration-ms="1087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.demo.qa.testcases.HomePageTest -->
+      <class name="com.demo.qa.testcases.FramesAlertPageTest">
+        <test-method is-config="true" signature="visitURL()[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:32 IST" name="visitURL" finished-at="2024-01-16T12:30:37 IST" duration-ms="5058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitURL -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:37 IST" name="setUpReports" finished-at="2024-01-16T12:30:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=FramesAlertPageTest.verifyFrameTabTest()[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyFrameTabTest()[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:37 IST" name="verifyFrameTabTest" finished-at="2024-01-16T12:30:37 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFrameTabTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:37 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFrameTabTest status=SUCCESS method=FramesAlertPageTest.verifyFrameTabTest()[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:37 IST" name="setUpReports" finished-at="2024-01-16T12:30:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=FramesAlertPageTest.verifyWindowsTabTest()[pri:1, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyWindowsTabTest()[pri:1, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:37 IST" name="verifyWindowsTabTest" finished-at="2024-01-16T12:30:38 IST" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWindowsTabTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:38 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:38 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWindowsTabTest status=SUCCESS method=FramesAlertPageTest.verifyWindowsTabTest()[pri:1, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:38 IST" name="setUpReports" finished-at="2024-01-16T12:30:38 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=FramesAlertPageTest.verifyAlertsTabTest()[pri:2, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyAlertsTabTest()[pri:2, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:38 IST" name="verifyAlertsTabTest" finished-at="2024-01-16T12:30:39 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertsTabTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:39 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertsTabTest status=SUCCESS method=FramesAlertPageTest.verifyAlertsTabTest()[pri:2, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.demo.qa.testcases.FramesAlertPageTest@cc43f62]" started-at="2024-01-16T12:30:39 IST" name="closeBrowser" finished-at="2024-01-16T12:30:39 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.demo.qa.testcases.FramesAlertPageTest -->
+      <class name="com.demo.qa.testcases.ElementPageTest">
+        <test-method is-config="true" signature="visitURL()[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:22 IST" name="visitURL" finished-at="2024-01-16T12:30:26 IST" duration-ms="4533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitURL -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:26 IST" name="setUpReports" finished-at="2024-01-16T12:30:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ElementPageTest.verifyElementPageTest()[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyElementPageTest()[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:26 IST" name="verifyElementPageTest" finished-at="2024-01-16T12:30:26 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementPageTest -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:26 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyElementPageTest status=SUCCESS method=ElementPageTest.verifyElementPageTest()[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method signature="verifyTextBoxPageTest()[pri:1, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:26 IST" name="verifyTextBoxPageTest" finished-at="2024-01-16T12:30:27 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTextBoxPageTest -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:26 IST" name="setUpReports" finished-at="2024-01-16T12:30:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ElementPageTest.verifyTextBoxPageTest()[pri:1, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:27 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTextBoxPageTest status=SUCCESS method=ElementPageTest.verifyTextBoxPageTest()[pri:1, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method signature="completeFormWithCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:27 IST" name="completeFormWithCredentials" data-provider="getDataFromCSV" finished-at="2024-01-16T12:30:28 IST" duration-ms="1040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Priya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ mohanapriya@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ tower 19 vijay apartments chennai-1.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeFormWithCredentials -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:27 IST" name="setUpReports" finished-at="2024-01-16T12:30:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ElementPageTest.completeFormWithCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:28 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=completeFormWithCredentials status=SUCCESS method=ElementPageTest.completeFormWithCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="setUpReports(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:28 IST" name="setUpReports" finished-at="2024-01-16T12:30:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ElementPageTest.verifyResult()[pri:3, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReports -->
+        <test-method signature="verifyResult()[pri:3, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:28 IST" name="verifyResult" finished-at="2024-01-16T12:30:28 IST" duration-ms="87" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Name:Priya] but found [Priya]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Name:Priya] but found [Priya]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.demo.qa.testcases.ElementPageTest.verifyResult(ElementPageTest.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResult -->
+        <test-method is-config="true" signature="reportStatusLog(org.testng.ITestResult)[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:32 IST" name="reportStatusLog" finished-at="2024-01-16T12:30:32 IST" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResult status=FAILURE method=ElementPageTest.verifyResult()[pri:3, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportStatusLog -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.demo.qa.testcases.ElementPageTest@2cb4893b]" started-at="2024-01-16T12:30:32 IST" name="closeBrowser" finished-at="2024-01-16T12:30:32 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.demo.qa.testcases.ElementPageTest -->
+    </test> <!-- /home/mohag/Documents/Assignments/DemoQA -->
+  </suite> <!-- DemoQA Test Suite -->
+</testng-results>

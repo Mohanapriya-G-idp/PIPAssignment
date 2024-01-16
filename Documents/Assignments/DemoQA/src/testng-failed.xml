@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoQA Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.demo.qa.listeners.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="/home/mohag/Documents/Assignments/DemoQA(failed)">
+    <classes>
+      <class name="com.demo.qa.testcases.ElementPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyResult"/>
+          <include name="reportStatusLog"/>
+          <include name="visitURL"/>
+          <include name="setUpReports"/>
+        </methods>
+      </class> <!-- com.demo.qa.testcases.ElementPageTest -->
+      <class name="com.demo.qa.testcases.InteractionsPageTest">
+        <methods>
+          <include name="setUpReports"/>
+          <include name="closeBrowser"/>
+          <include name="verifyDragAndDropTest"/>
+          <include name="reportStatusLog"/>
+          <include name="visitURL"/>
+        </methods>
+      </class> <!-- com.demo.qa.testcases.InteractionsPageTest -->
+    </classes>
+  </test> <!-- /home/mohag/Documents/Assignments/DemoQA(failed) -->
+</suite> <!-- Failed suite [DemoQA Test Suite] -->

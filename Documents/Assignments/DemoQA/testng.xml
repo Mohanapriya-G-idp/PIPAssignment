@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoQA Test Suite">
+    <listeners>
+        <listener class-name="com.demo.qa.listeners.CustomListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/home/mohag/Documents/Assignments/DemoQA">
+        <classes>
+            <class name="com.demo.qa.testcases.HomePageTest"/>
+            <class name="com.demo.qa.testcases.ElementPageTest"/>
+            <class name="com.demo.qa.testcases.FramesAlertPageTest"/>
+
+        </classes>
+    </test>
+</suite>
