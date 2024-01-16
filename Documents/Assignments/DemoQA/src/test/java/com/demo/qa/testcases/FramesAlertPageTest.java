@@ -18,22 +18,8 @@ public class FramesAlertPageTest extends TestBase {
 
     public FramesAlertPageTest() {
         super();
-        extentReports = new ExtentReports();
-        sp = new ExtentSparkReporter("");
-        extentReports.attachReporter(sp);
-    }
-
-    @BeforeClass
-    public void visitURL() {
-        launchBrowser();
         framesAlertPage = new FramesAlertPage();
         framesAlertPage.goToFramesPage();
-    }
-
-    @BeforeMethod
-    public void setUpReports(ITestResult result) {
-        methodName = result.getMethod().getMethodName();
-        test = extentReports.createTest(methodName).assignAuthor(author).assignCategory(category);
     }
 
     @Test
@@ -54,22 +40,4 @@ public class FramesAlertPageTest extends TestBase {
         framesAlertPage.validatePromptAlert();
     }
 
-    @AfterMethod
-    public void reportStatusLog(ITestResult result) {
-        if (result.getStatus() == ITestResult.SUCCESS) {
-            test.log(Status.PASS, "Test Passed: " + methodName);
-        } else if (result.getStatus() == ITestResult.FAILURE) {
-            test.log(Status.FAIL, "Test Failed: " + methodName);
-            failLog = TestUtil.getScreenShot(methodName);
-            test.addScreenCaptureFromPath(failLog);
-        } else if (result.getStatus() == ITestResult.SKIP) {
-            test.log(Status.SKIP, "Test Skipped: " + methodName);
-        }
-    }
-
-    @AfterClass
-    public void closeBrowser() {
-        extentReports.flush();
-        tearDown();
-    }
 }

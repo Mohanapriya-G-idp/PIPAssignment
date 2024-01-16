@@ -23,23 +23,9 @@ public class ElementPageTest extends TestBase {
 
     public ElementPageTest() {
         super();
-        extentReports = new ExtentReports();
-        sp = new ExtentSparkReporter("");
-        extentReports.attachReporter(sp);
-    }
-
-    @BeforeClass
-    public void visitURL() {
-        launchBrowser();
         homePage = new HomePage();
         homePage.clickOnElementIcon();
         elementPage = new ElementPage();
-    }
-
-    @BeforeMethod
-    public void setUpReports(ITestResult result) {
-        methodName = result.getMethod().getMethodName();
-        test = extentReports.createTest(methodName).assignAuthor(author).assignCategory(category);
     }
 
     @Test
@@ -69,27 +55,6 @@ public class ElementPageTest extends TestBase {
     public void verifyResult() {
         String output = elementPage.validateTextEntered();
         Assert.assertEquals(input, output);
-    }
-
-    @AfterMethod
-    public void reportStatusLog(ITestResult result) {
-
-        if (result.getStatus() == ITestResult.SUCCESS) {
-            test.log(Status.PASS, "Test Passed: " + methodName);
-        } else if (result.getStatus() == ITestResult.FAILURE) {
-            test.log(Status.FAIL, "Test Failed: " + methodName);
-            failLog = TestUtil.getScreenShot(methodName);
-            test.addScreenCaptureFromPath(failLog);
-        } else if (result.getStatus() == ITestResult.SKIP) {
-            test.log(Status.SKIP, "Test Skipped: " + methodName);
-        }
-
-    }
-
-    @AfterClass
-    public void closeBrowser() {
-        extentReports.flush();
-        tearDown();
     }
 
 }
