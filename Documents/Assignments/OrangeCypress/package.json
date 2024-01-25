@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cypress": "^12.17.4"
+  },
+  "name": "orangecypress",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx cypress run --headed",
+    "debug": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.8.3"
+  },
+  "keywords": [],
+  "description": ""
+}
