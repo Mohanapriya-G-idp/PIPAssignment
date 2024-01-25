@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="/home/mohag/Documents/Assignments/OrangeHRM(failed)">
+    <classes>
+      <class name="com.orange.qa.test.DirectoryPageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyAddedEmployee" invocation-numbers="0"/>
+          <include name="loginIntoAccount"/>
+          <include name="setUpReports"/>
+          <include name="statusLogOfReorts"/>
+          <include name="setUpReportLog"/>
+        </methods>
+      </class> <!-- com.orange.qa.test.DirectoryPageTest -->
+      <class name="com.orange.qa.test.EmploymentPageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUpReports"/>
+          <include name="verifyAddedEmployee"/>
+          <include name="loginIntoAccount"/>
+          <include name="statusLogOfReorts"/>
+          <include name="setUpReportLog"/>
+        </methods>
+      </class> <!-- com.orange.qa.test.EmploymentPageTest -->
+    </classes>
+  </test> <!-- /home/mohag/Documents/Assignments/OrangeHRM(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
