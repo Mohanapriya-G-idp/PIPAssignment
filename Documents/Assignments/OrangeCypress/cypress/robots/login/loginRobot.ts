@@ -1,5 +1,5 @@
 import { data } from "cypress/types/jquery";
-import { BaseHands, BaseEyes, BaseDependencies } from "../BaseRobot";
+import { BaseHands, BaseEyes, BaseDependencies } from "../baseRobot";
 
 export class LoginPageDependencies extends BaseDependencies {
   visitPage() {

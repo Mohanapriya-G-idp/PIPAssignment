@@ -1,30 +1,25 @@
-import cypress = require("cypress");
 import {
   LoginPageEyes,
   LoginPageDependencies,
   LoginPageHands,
-} from "/home/mohag/Documents/Assignments/OrangeCypress/cypress/robots/login/LoginRobot";
-import {
-  PIMEyes,
-  PIMHands,
-} from "/home/mohag/Documents/Assignments/OrangeCypress/cypress/robots/pim/PIMRobot";
+} from "../robots/login/loginRobot";
+import { PIMEyes, PIMHands } from "../robots/pim/pimRobot";
 import {
   DirectoryEye,
   DirectoryHand,
-} from "/home/mohag/Documents/Assignments/OrangeCypress/cypress/robots/directory/DirectoryRobot";
+} from "../robots/directory/directoryRobot";
+
+const appLogin = new LoginPageDependencies();
+const loginEye = new LoginPageEyes();
+const loginHand = new LoginPageHands();
+const pimEye = new PIMEyes();
+const pimHand = new PIMHands();
+const directoryEye = new DirectoryEye();
+const directoryHand = new DirectoryHand();
 
 describe(
   "Login OrangeHRM and verify the added employee",
-  { testIsolation: false },
   () => {
-    const appLogin = new LoginPageDependencies();
-    const loginEye = new LoginPageEyes();
-    const loginHand = new LoginPageHands();
-    const pimEye = new PIMEyes();
-    const pimHand = new PIMHands();
-    const directoryEye = new DirectoryEye();
-    const directoryHand = new DirectoryHand();
-
     before(() => {
       cy.clearAllCookies();
       cy.clearAllSessionStorage();

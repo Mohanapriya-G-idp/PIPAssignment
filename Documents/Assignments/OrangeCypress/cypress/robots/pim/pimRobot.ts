@@ -1,4 +1,4 @@
-import { BaseDependencies, BaseEyes, BaseHands } from "../BaseRobot";
+import { BaseDependencies, BaseEyes, BaseHands } from "../baseRobot";
 var inputText: any;
 
 export class PIMEyes extends BaseEyes {
