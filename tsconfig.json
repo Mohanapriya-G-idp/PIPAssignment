@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es2015", "es2017", "dom", "es2018.promise"],
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "types": ["cypress", "node"]
+  },
+  "include": [
+    "**/*.ts",
+    "support/commands.ts",
+    "support/index.d.ts",
+    "integration/skypassport/deleteuser.js",
+    "**/*.js"
+  ]
+}
