@@ -1,6 +1,11 @@
 name: Cypress Test
 
 on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "cypress/**"
   schedule:
     - cron: "0 6 * * *"
 
